@@ -3,45 +3,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
 
 
     <title>Reforço Formulario</title>
 </head>
 
     <body>
+        <section>
+            <div class="quadrado">
+                <input type="text" id="nome" name="nome" required placeholder="Nome">
+                <input type="text" id="sobrenome" name="sobrenome" required placeholder="Sobrenome">
+                <br>
+                <input type="number" name="idade" id="idade" required placeholder="idade">
+                <br>
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento" >
+                <br>
+                <label for="genero">Genero:</label>
+                <select name="genero" id="genero">
+                <option value="masc">Homem</option>
+                <option value="fem">Mulher</option>
+                <option value="non">Outro</option>
+                </select>
+                <br>
+                <label for="apelido">Como gostaria de ser tratado(a)? Ex: apelido, nome...</label>
+                <br>
+                <input type="text" name="apelido" id="apelido">
+            </div>
         
-        <input type="text" id="nome" name="nome" required placeholder="Nome">
-        <input type="text" id="sobrenome" name="sobrenome" required placeholder="Sobrenome">
-        <br>
-        <input type="number" name="idade" id="idade" required placeholder="idade">
-        <br>
-        <label for="nascimento">Data de nascimento:</label>
-        <input type="date" name="nascimento" id="nascimento" >
-        <br>
-        <label for="cabelo">Cor do cabelo:</label>
+        <div class="quadrado">    
+            <input type="email" name="email" id="email" required placeholder="E-mail">
+            <br>
+            <input type="number" name="DDD" id="DDD" required placeholder="DDD">
+            <br>
+            <input type="number" name="contato" id="contato" required placeholder="Telefone">
+            <br>
+            <input type="number" name="cpf" id="cpf" required placeholder="CPF">
+        </div>
+
+        <div class="quadrado">
+            <label for="cabelo">Cor do cabelo:</label>
         <input type="color" name="cabelo" id="cabelo" >
         <br>
-       <input type="email" name="email" id="email" required placeholder="E-mail">
-       <br>
-       <label for="pele">Cor da pele:</label>
-       <input type="color" name="pele" id="pele">
-       <br>
-       <label for="olhos">Cor dos olhos:</label>
+        <label for="olhos">Cor dos olhos:</label>
        <input type="color" name="olhos" id="olhos">
-        <br>
-        <input type="number" name="contato" id="contato" required placeholder="Numero p/ contato">
-        <br>
-        <input type="number" name="cpf" id="cpf" required placeholder="CPF">
-        <br>
-        <label for="hora">Horario que acorda:</label>
-        <input type="time" name="hora" id="hora">
-        <br>
-        <label for="genero">Genero:</label>
-        <select name="genero" id="genero">
-            <option value="masc">Homem</option>
-            <option value="fem">Mulher</option>
-            <option value="non">Outro</option>
-        </select>
+       <br>
+       <label for="favorita">Cor favorita:</label>
+       <input type="color" name="favorita" id="favorita">
+        </div>
+
+        <div class="quadrado">
+            <label for="camisa">Qual calça prefere?</label>
+            <br>
+            <select name="camisa" id="camisa">
+                <option value="pp">PP (Pouco Pano)</option>
+                <option value="p">P (Piquena)</option>
+                <option value="m">M (Modesta)</option>
+                <option value="g">G (Gigantesca)</option>
+                <option value="gg">GG (Grande e Grauda)</option>
+            </select>
+            <br>
+            <label for="tenis">Qual o tamanho de tenis você usa?</label>
+            <br>
+            <input type="number" name="tenis" id="tenis">
+        </div>
+
+        </section>
+
+        <section>
+            <div class="quadrado">
+                <label for="sonoA">Horario em que acorda:</label>
+                <input type="time" name="sonoA" id="sonoA">
+                <br>
+                <label for="sonoB">Horario em que dorme:</label>
+                <input type="time" name="sonoB" id="sonoB">
+            </div>
+
+            <div class="quadrado">
+                <label for="escolha">Qual prefere?</label>
+                <br>
+                <input type="radio" name="escolha" id="gato">
+                <label for="gato">Gato</label>
+                <br>
+                <input type="radio" name="escolha" id="cachorro">
+                <label for="cachorro">Cachorro</label>
+                <br>
+                <input type="radio" name="escolha" id="elefante">
+                <label for="elefante">Elefante Psiquico de Guerra Pré-Histórico</label>
+            </div>
+
+            <div class="quadrado">
+                <input type="text" name="pai" id="pai" required placeholder="Nome do pai">
+                <input type="number" name="idadepai" id="idadepai" required placeholder="Idade do pai"> 
+                <br>
+                <input type="text" name="mae" id="mae" required placeholder="Nome da mãe">
+                <input type="number" name="idademae" id="idademae" required placeholder="Iade da mãe">
+                <br>
+                <input type="number" name="irmao" id="irmao" required placeholder="Numero de irmãos">
+            </div>
+        </section>
+        
+        <section>
+            <div class="quadrado">
+                <label for="fobia">Você tem alguma fobia?</label>
+                <br>
+                <input type="radio" name="fobia" id="sim">
+                <label for="sim">Sim</label>
+                <br>
+                <input type="radio" name="fobia" id="nao">
+                <label for="nao">Não</label>
+            </div>
+
+            <div class="quadrado">
+                <label for="alergia">Você tem alguma alergia?</label>
+                <br>
+                <input type="radio" name="alergia" id="sima">
+                <label for="sima">Sim</label>
+                <br>
+                <input type="radio" name="alergia" id="naoa">
+                <label for="naoa">Não</label>
+            </div>
+
+            <div class="quadrado">
+                <label for="evento">Se você pudesse organizar um evento pra um grupo de pessoas, qual seria?</label>
+                <br>
+                <input type="checkbox" name="evento" id="a">
+                <label for="a">Um churrasco bem resenha e tranquilo com musica</label>
+                <br>
+                <input type="checkbox" name="evento" id="b">
+                <label for="b">Uma noite de jogos de tabuleiro, para aproximar todo mundo!</label>
+                <br>
+                <input type="checkbox" name="evento" id="c">
+                <label for="c">Uma guerra de nerfs no meio do nada valendo nada mais do que cada singelo</label> <br> <label for="c">resquicio de sanidade dos competidores.</label>
+                <br>
+                <input type="checkbox" name="evento" id="d">
+                <label for="d">Não sou muito de evento eu acho</label>
+            </div>
+        </section>
+
+        <section>
+            <div class="quadrado">
+                <label for="nerf">O que você escolhe?</label>
+                <br>
+                <input type="radio" name="nerf" id="arma">
+                <label for="arma">Nerf</label>
+                <br>
+                <input type="radio" name="nerf" id="nada">
+            </div>
+
+            <div class="quadrado">
+                <label for="paranoia">Você se considera paranoico(a)?</label>
+                <br>
+                <input type="radio" name="paranoia" id="simp">
+                <label for="simp">Sim</label>
+                <br>
+                <input type="radio" name="paranoia" id="naop">
+                <label for="naop">Não, por que?</label>
+            </div>
+
+            <div class="quadrado">
+                <label for="escola">Qual sua materia favorita?</label>
+                <br>
+                <select name="escola" id="escola">
+                    <option value="matematica">Matematica</option>
+                    <option value="portugues">Português</option>
+                    <option value="ciencias">Ciências</option>
+                    <option value="embora">A de ir embora</option>
+                </select>
+            </div>
+
+            <div class="quadrado">
+                <label for="satisfacao">O quão satisfeito você está com as perguntas?</label>
+                <br>
+                <input type="range" name="satisfacao" id="satisfacao">
+            </div>
+        </section>
+
 
 
     </body>
