@@ -11,6 +11,12 @@ function validarFormulario(){
 
     const email = document.getElementById('email').value.trim();
     
+    const ddd = document.getElementById('ddd').value.trim();
+
+    const contato = document.getElementById('contato').value.trim();
+
+    const cpf = document.getElementById('cpf').value.trim();
+
     if(!nome) {
         alert('Por favor, preencha o nome.');
         return;
@@ -41,4 +47,18 @@ function validarFormulario(){
         return;
     }
 
+    if(!ddd) {
+        alert('Por favor, insira o DDD.');
+        return;
+    }
+
+    if(!contato) {
+        alert('Por favor, insira o telefone pra contato.');
+        return;
+    }
+
+    if(!cpf) {
+        alert('Por favor, insira um cpf valido.');
+        return;
+    }
 }
